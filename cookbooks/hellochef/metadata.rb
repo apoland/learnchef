@@ -9,3 +9,5 @@ version          '0.1.0'
 
 depends 'angieslist-base'
 depends 'angieslist-mariadb'
+
+depends 'apache2'
