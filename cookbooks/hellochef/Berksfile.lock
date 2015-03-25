@@ -1,0 +1,44 @@
+DEPENDENCIES
+  angieslist-base
+    git: https://github.com/angieslist/angieslist-base
+    revision: 54b127cda4452e0238b0c8d29ef9158a63a87878
+  angieslist-mariadb
+    git: https://github.com/angieslist/angieslist-mariadb
+    revision: b3ffbd2706283593b1c222b88edc61d2eccbe633
+  hellochef
+    path: .
+    metadata: true
+
+GRAPH
+  angieslist-base (0.1.0)
+    chef-client (~> 4.2.4)
+    limits (~> 1.0.0)
+    ntp (~> 1.7.0)
+  angieslist-mariadb (0.1.0)
+    apt (~> 2.0)
+    build-essential (~> 2.0)
+    openssl (~> 2.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  apt (2.7.0)
+  build-essential (2.2.1)
+  chef-client (4.2.4)
+    cron (>= 1.2.0)
+    logrotate (>= 1.2.0)
+    windows (~> 1.11)
+  chef-sugar (3.0.1)
+  chef_handler (1.1.6)
+  cron (1.6.1)
+  hellochef (0.1.0)
+    angieslist-base (>= 0.0.0)
+    angieslist-mariadb (>= 0.0.0)
+  limits (1.0.0)
+  logrotate (1.9.1)
+  ntp (1.7.0)
+  openssl (2.0.2)
+    chef-sugar (>= 0.0.0)
+  windows (1.36.6)
+    chef_handler (>= 0.0.0)
+  yum (3.5.3)
+  yum-epel (0.6.0)
+    yum (~> 3.0)

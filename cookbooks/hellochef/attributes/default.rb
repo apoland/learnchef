@@ -1,0 +1,1 @@
+default["apache"]["content"]          = "This is content from my attribute"

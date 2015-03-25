@@ -1,0 +1,7 @@
+source "https://supermarket.chef.io"
+
+metadata
+
+cookbook "angieslist-base", git: 'https://github.com/angieslist/angieslist-base'
+cookbook "angieslist-mariadb", git: 'https://github.com/angieslist/angieslist-mariadb'
+

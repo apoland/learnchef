@@ -13,3 +13,12 @@ file "/tmp/something" do
   mode '0755'
   action :create
 end
+
+file '/etc/motd' do
+  content 'hello chef'
+end
+
+file '/tmp/shouldnotexist' do
+  action :delete
+end
+

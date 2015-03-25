@@ -1,0 +1,1 @@
+include_recipe 'angieslist-mariadb::server'
