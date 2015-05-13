@@ -19,6 +19,7 @@ Vagrant.configure("2") do |config|
     chef.cookbooks_path = chef_cookbooks_path
     
     chef.add_recipe "hellochef::default"
+    #chef.add_recipe "hellochef::apache2"
   
   end
 
