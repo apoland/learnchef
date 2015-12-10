@@ -2,7 +2,7 @@
 
 
 Vagrant.configure("2") do |config|
-  config.vm.box= "chef/ubuntu-14.04"
+  config.vm.box= "ubuntu/trusty64"
  
   config.vm.provider :virtualbox do |v|
       # This setting gives the VM 1024MB of RAM instead of the default 384.
